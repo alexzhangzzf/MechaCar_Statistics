@@ -24,5 +24,20 @@ Figure 5. total_summary <br/>
 - P-value for lot1 is 1 and p-value for lot2 is 0.6072, both above common siginificant level of 0.05. So we can conclude that we failed to reject null hypothesis is rejected and PSI from lot1 and lot2 are not statistically different from population mean of 1,500.
 - P-value for lot3 is 0.04168, smaller than common significant p-value of 0.05. Therefor, we have sufficient evidence to reject null hypothesis that PSI from lot3 is statistically different from population mean of 1,500.
 ## Study Design: MechaCar vs Competition
-
+### Goal of the study
+- Design a statistical study to compare performance of MechaCar vehicles against performance of vehicles from other manufacturers
+### Experimental design
+#### Metrics
+We will gather information on vehicle type from MechaCar and competitive brands to gather metrics that is close related to car performances and consumer interest. 
+- For performances related to vehicle, we will gather information on horse power and miles per gallon.
+- For customer interest, we will gather information on vehicle cost, maintainance cost and safety rating.
+#### Hypothesis
+- Null hypothesis: MechaCar vehicles have same performance as vehicles from other manufacturers.
+- Alternative hypothesis: MechaCar vehicle have at least one of the factors with performance vehicles different from other manufacturers. 
+#### Statistical tests
+- Because we are comparing means of multiple dependent variables across a single independent variable with multiple groups (various factors based on car manufacturing companies), we will use one-way ANOVA test for analysis.
+- For analysis, the mean of different metrics will be compared between MechaCar and competitors to get the p-value for each metrics, if there is p-value for a metrics shows statistical significance (smaller than 0.05), we can reject the null hypothesis for that metrics.
+- If there is a metric that is statistically significant, to further analysis the performance, we should do pair two-sample t-Test to further analyze and confirm if MechaCar performance or cost is better or higher than competitor by one-sided t-test.
+#### Data required
+- Data for horse power, miles per gallon, cost, maintainance cosst and safety ratings from both MechaCar and competitive brand for comparable car types within specific time range (two years) should be obtained. When comparing metrics, they should be grouped by car types for comparable data. 
 
